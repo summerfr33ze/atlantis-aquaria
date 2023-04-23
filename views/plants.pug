@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1 title 
+    p Aquariums look better as an underwater forest. Plants improve water quality and provide a stimulating evironment for fish.
+    div(class="products")
+        each plant in item_list
+            img(src="")
+            div #{plant.name}
+            div #{plant.category}
+            div #{plant.price}
+            div #{plant.left_in_stock}

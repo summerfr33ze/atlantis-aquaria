@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1 title 
+    p Make your aquarium beautiful with our premium decor. 
+    div(class="products")
+        each decoration in item_list
+            img(src="")
+            div #{decoration.name}
+            div #{decoration.category}
+            div #{decoration.price}
+            div #{decoration.left_in_stock}

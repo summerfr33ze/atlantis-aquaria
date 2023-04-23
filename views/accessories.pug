@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1= title 
+    p Heaters and filters are essential for the wellbeing of your fish. 
+    div(class="products")
+        each accessory in item_list
+            div(class="product")
+                img(src="")
+                div #{accessories.name}
+                div #{accessories.category}
+                div #{accessories.price}
+                div #{accessories.left_in_stock}

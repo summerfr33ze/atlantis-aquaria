@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1 title 
+    p All of our food products provide balanced nutrition tailored to the specific needs of your fish. 
+    div(class="products")
+        each food in item_list
+            img(src="")
+            div #{food.name}
+            div #{food.category}
+            div #{food.price}
+            div #{food.left_in_stock}

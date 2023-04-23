@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1 title 
+    p Check out our selection of tanks. There's a size for everyone. 
+    div(class="products")
+        each tank in item_list
+            img(src="")
+            div #{tank.name}
+            div #{tank.category}
+            div #{tank.price}
+            div #{tank.left_in_stock}
